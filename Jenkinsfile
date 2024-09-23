@@ -5,6 +5,7 @@ pipeline{
 		{
 			steps{
 				echo "checking for pom.xml file"
+				sh 'mvn validate'
 			}
 		}
 		stage('build'){
