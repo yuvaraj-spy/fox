@@ -16,7 +16,7 @@ pipeline{
 		stage('jar file')
 		{
 			steps{
-				sh 'java -jar target/MavenProject-0.0.2-SNAPSHOT.jar
+				sh 'java -jar target/MavenProject-0.0.2-SNAPSHOT.jar'
 			}
 		}
 	}
