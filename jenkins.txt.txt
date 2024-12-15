@@ -3,19 +3,15 @@ pipeline{
     stages{
         stage('jenkins_execute'){
             steps{
-            echo 'mvn compile'  
+             bat 'mvn package'  
             }
         }
             stage('jenkins_execute2'){
             steps{
-            echo 'mvn package'  
+            bat  'mvn install'
             }
         }
-          stage('jenkins_execute2'){
-            steps{
-            echo 'mvn install'  
-            }
-        }
+  
 
     }
 }
