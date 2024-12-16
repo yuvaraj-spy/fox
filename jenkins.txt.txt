@@ -9,7 +9,7 @@ pipeline{
             stage('jenkins_execute2'){
             steps{
             bat  'mvn install'
-         }
+          }
         }
   
 
