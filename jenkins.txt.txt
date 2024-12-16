@@ -6,7 +6,7 @@ pipeline{
              bat 'mvn package'  
             }
         }
-            stage('jenkins_execute2'){
+            stage('jenkins_execute2'){ 
             steps{
             bat  'mvn install'
           }
